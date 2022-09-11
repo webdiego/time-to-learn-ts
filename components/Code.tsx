@@ -1,6 +1,5 @@
 import React from 'react';
 import Prism from 'prismjs';
-import 'prismjs/themes/prism-tomorrow.css';
 
 interface TCode {
   code: string;
@@ -11,7 +10,7 @@ export default function Code({ code }: TCode) {
   });
   return (
     <div className="my-5">
-      <pre className="language-javascript max-w-4xl">
+      <pre className="language-javascript max-w-5xl">
         <code>{code}</code>
       </pre>
     </div>

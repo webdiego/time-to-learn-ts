@@ -24,7 +24,7 @@ const ninja: TInfo = {
 };
 export default function Basic() {
   return (
-    <Layout title="Basic-01">
+    <Layout title="Basics">
       {/* ARRAYS */}
       <h3 className="my-5 text-xl font-medium">Arrays</h3>
       <p>Different ways to write array types</p>

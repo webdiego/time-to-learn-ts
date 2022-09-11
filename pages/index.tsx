@@ -1,9 +1,8 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
+import Button from '@components/Button';
 const Home: NextPage = () => {
-  const router = useRouter();
   return (
     <div>
       <Head>
@@ -14,13 +13,9 @@ const Home: NextPage = () => {
       <div className="flex flex-col max-w-7xl mx-auto min-h-screen item-center justify-center">
         <h1 className="text-black text-5xl font-bold text-center mb-10">Learn Typescript</h1>
         <Image src="/ts-logo.svg" alt="ts" width={200} height={200} />
-        <div className="max-w-sm mx-auto mt-5">
-          <button
-            onClick={() => router.push('/basic/01-basic')}
-            className="bg-[#3078C6] py-2 px-4 text-white rounded-md"
-          >
-            Basic 01
-          </button>
+        <div className="max-w-sm mx-auto mt-5 flex">
+          <Button route="/basics/01-basics" title="01-Basics" />
+          <Button route="/basics/02-functions" title="02-Functions" />
         </div>
       </div>
     </div>
