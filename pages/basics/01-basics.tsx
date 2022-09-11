@@ -1,5 +1,6 @@
 import Layout from '@components/Layout';
 import Code from '@components/Code';
+import Title from '@components/Title';
 
 const names: string[] = ['Diego', 'Jorge', 'Andrew'];
 
@@ -26,13 +27,13 @@ export default function Basic() {
   return (
     <Layout title="Basics">
       {/* ARRAYS */}
-      <h3 className="my-5 text-xl font-medium">Arrays</h3>
+      <Title text="Arrays" />
       <p>Different ways to write array types</p>
       <Code code={`const names: string[] = ['Diego', 'Jorge', 'Andrew']`} />
       <p>Using the generics types</p>
       <Code code={`const days: Array<number> = [1, 2, 3];`} />
       {/* OBJECTS */}
-      <h3 className="my-5 text-xl font-medium">Objects</h3>
+      <Title text="Objects" />
       <p>Different ways to define an object</p>
       <Code
         code={`const info: {

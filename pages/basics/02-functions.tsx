@@ -1,5 +1,6 @@
 import Layout from '@components/Layout';
 import Code from '@components/Code';
+import Title from '@components/Title';
 
 function product(a: number, b: number): number {
   return a * b;
@@ -21,7 +22,7 @@ export default function Basic() {
   return (
     <Layout title="Functions">
       <div className="mt-10">
-        <h3 className="mb-2 text-xl font-medium">Basic function</h3>
+        <Title text="Basic function" />
         <p>
           We define the types inside a function, without say what should return, in this case is
           inferring a type of number by default
@@ -41,20 +42,20 @@ export default function Basic() {
       </div>
       {/* Function as a const */}
       <div className="mt-10">
-        <h3 className="mt-5 mb-2 text-xl font-medium">Function as a const</h3>
+        <Title text="Function as a const" />
         <Code
           code={'const addString = (str1: string, str2: string): string => `${str1} ${str2}`'}
         />
       </div>
       {/* Default params */}
       <div className="mt-10">
-        <h3 className="mt-5 mb-2 text-xl font-medium">Default params</h3>
+        <Title text="Default params" />
         <Code
           code={"const addString2 = (str1: string, str2: string = ''): string => `${str1} ${str2}`"}
         />
       </div>
       <div className="mt-10">
-        <h3 className="mt-5 mb-2 text-xl font-medium">Union types</h3>
+        <Title text="Union types" />
         <Code
           code={
             'const addString3 = (title: string, param: string | number): string => `${title} ${param}`'
@@ -62,7 +63,7 @@ export default function Basic() {
         />
       </div>
       <div className="mt-10">
-        <h3 className="mt-5 mb-2 text-xl font-medium">Void</h3>
+        <Title text="Void" />
         <Code
           code={
             'const addString3 = (title: string, param: string | number): void => console.log(`${title} ${param}`)'
@@ -70,7 +71,7 @@ export default function Basic() {
         />
       </div>
       <div className="mt-10">
-        <h3 className="mt-5 mb-2 text-xl font-medium">...rest</h3>
+        <Title text="...rest" />
         <Code
           code={
             'function list(party: string, ...names: Array<string>): string {return `${party} ${names}`}'

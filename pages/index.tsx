@@ -14,8 +14,8 @@ const Home: NextPage = () => {
       <Layout>
         <div className="flex flex-col max-w-7xl mx-auto min-h-screen item-center justify-center">
           <Image src="/ts-logo.svg" alt="ts" width={200} height={200} />
-          <h1 className="text-black text-5xl font-bold text-center mt-5 ">Learn Typescript</h1>
-          <p className="text-center mt-2">Is time to learn it</p>
+          <p className="text-center mt-5">Is time to learn</p>
+          <h1 className="text-black text-5xl font-bold text-center">Typescript</h1>
         </div>
       </Layout>
     </div>
