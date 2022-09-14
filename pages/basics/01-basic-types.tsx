@@ -25,7 +25,7 @@ const ninja: TInfo = {
 };
 export default function Basic() {
   return (
-    <Layout title="Basics">
+    <Layout title="Basic types">
       {/* ARRAYS */}
       <Title text="Arrays" />
       <p>Different ways to write array types</p>
@@ -44,7 +44,6 @@ export default function Basic() {
   type: 'Ninja',
 };`}
       />
-      <p>Using the generics types</p>
       <Code
         code={`interface TInfo {
   name: string;
