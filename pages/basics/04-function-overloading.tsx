@@ -1,7 +1,7 @@
 import Layout from '@components/Layout';
 import Code from '@components/Code';
 import Title from '@components/Title';
-
+import IsThat from '@components/Resume';
 interface Coordinate {
   x: number;
   y: number;
@@ -57,7 +57,7 @@ export default function FunctionOverloading() {
   return (
     <Layout title="Function overloading">
       <div className="mt-10">
-        <p>Function that can take different param / types</p>
+        <IsThat text="You can have multiple functions with the same name but different parameter types and return type. " />
 
         <Code
           code={`interface Coordinate {
@@ -82,14 +82,14 @@ export default function FunctionOverloading() {
     };
   }`}
         />
-        <p>How can we abstract this function?</p>
+        <p>How can we abstract / expand the possibility of this function?</p>
         <Code
           code={`function coordinate(obj: Coordinate): Coordinate;
 function coordinate(x: number, y: number): Coordinate;
 function coordinate(arg1: unknown, arg2?: unknown): Coordinate;`}
         />
         <p>
-          Is the same functions, is returning the same object, but we defined our possible scenario.
+          Is the same functions, is returning the same object, but we defined our possible different scenario with different params.
         </p>
         <Code
           code={`function coordinate(arg1: unknown, arg2?: unknown): Coordinate {
@@ -148,7 +148,7 @@ function coordinate(arg1: unknown, arg2?: unknown): Coordinate {
   console.log(coordinate({ x: 10, y: 25 }));
   //If the func takes two params
   console.log(coordinate(10, 20));
-  //If the func takes a string
+  //If the func take one param and is a string
   console.log(coordinate('x:10,y:25'));`}
         />
       </div>
