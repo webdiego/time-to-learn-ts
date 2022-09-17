@@ -44,7 +44,7 @@ function add3DCoordinates(c1: ThreeDCoordinate, c2: ThreeDCoordinate): ThreeDCoo
 ];
 }`}
         />
-        <Title text="Tuples where the params can have different type and/or optional" />
+        <Title text="Tuples where the params can have different type and / or is optional" />
 
         <Code
           code={`type Team = [number, string, string, string?];
@@ -55,7 +55,7 @@ const companyTeam: Team[] = [
 ];`}
         />
         <Title text="...Tuples" />
-        <p>
+        <p className="mt-4">
           When you have a set of known types at the beginning of a tuple and then an unknown length,
           you can use the spread operator to indicate that it can have any length and the extra
           indexes
