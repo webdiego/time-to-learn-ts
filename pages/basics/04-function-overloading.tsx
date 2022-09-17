@@ -1,6 +1,6 @@
 import Layout from '@components/Layout';
 import Code from '@components/Code';
-import IsThat from '@components/Resume';
+import Resume from '@components/Resume';
 interface Coordinate {
   x: number;
   y: number;
@@ -56,7 +56,7 @@ export default function FunctionOverloading() {
   return (
     <Layout title="Function overloading">
       <div className="mt-10">
-        <IsThat text="You can have multiple functions with the same name but different parameter types and return type. " />
+        <Resume text="You can have multiple functions with the same name but different parameter types and return type. " />
 
         <Code
           code={`interface Coordinate {
@@ -88,7 +88,8 @@ function coordinate(x: number, y: number): Coordinate;
 function coordinate(arg1: unknown, arg2?: unknown): Coordinate;`}
         />
         <p>
-          Is the same functions, is returning the same object, but we defined our possible different scenario with different params.
+          Is the same functions, is returning the same object, but we defined our possible different
+          scenario with different params.
         </p>
         <Code
           code={`function coordinate(arg1: unknown, arg2?: unknown): Coordinate {

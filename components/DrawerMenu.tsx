@@ -23,6 +23,7 @@ export default function DrawerMenu({ isOpen, toggleDrawer, theme }: TDrawer) {
         <Button route="/basics/03-functions-with-functions" title="03-Functions-with-functions" />
         <Button route="/basics/04-function-overloading" title="04-Function-overloading" />
         <Button route="/basics/05-optionals" title="05-Optionals" />
+        <Button route="/basics/06-tuples" title="05-Tuples" />
       </div>
     </Drawer>
   );
