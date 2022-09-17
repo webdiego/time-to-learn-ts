@@ -42,7 +42,7 @@ export default function Layout({ children, title }: TLayout) {
       </div>
       <div className="bg-white dark:bg-slate-800 min-h-screen">
         <div className="py-10 px-5 max-w-7xl mx-auto ">
-          {title && <h2 className="text-5xl font-bold ">{title}</h2>}
+          {title && <h2 className="text-5xl font-bold my-5">{title}</h2>}
           {children}
         </div>
       </div>

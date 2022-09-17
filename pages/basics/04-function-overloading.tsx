@@ -1,6 +1,5 @@
 import Layout from '@components/Layout';
 import Code from '@components/Code';
-import Title from '@components/Title';
 import IsThat from '@components/Resume';
 interface Coordinate {
   x: number;
