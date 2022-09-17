@@ -6,6 +6,7 @@ import { useTheme } from 'next-themes';
 import Sun from '@components/icons/Sun';
 import Moon from '@components/icons/Moon';
 import Menu from '@components/icons/Menu';
+import Link from 'next/link';
 interface TLayout {
   title?: string;
   children: React.ReactNode;
@@ -27,8 +28,15 @@ export default function Layout({ children, title }: TLayout) {
             <div onClick={toggleDrawer} className="cursor-pointer mr-8">
               <Menu />
             </div>
-
-            <Image src="/ts-logo.svg" alt="ts" width={40} height={40} />
+            <Link href="/">
+              <Image
+                src="/ts-logo.svg"
+                alt="ts"
+                width={40}
+                height={40}
+                className="cursor-pointer"
+              />
+            </Link>
             <p className="ml-2 font-medium text-xs self-end">{title}</p>
           </div>
 
