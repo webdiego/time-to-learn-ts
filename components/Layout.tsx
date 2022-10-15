@@ -12,8 +12,18 @@ interface TLayout {
 }
 
 export default function Layout({ children, title }: TLayout) {
+  const [mounted, setMounted] = React.useState(false);
+
   const [isOpen, setIsOpen] = React.useState(false);
   const { theme, setTheme } = useTheme();
+  // useEffect only runs on the client, so now we can safely show the UI
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   const toggleDrawer = () => {
     setIsOpen(() => !isOpen);
