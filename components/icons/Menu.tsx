@@ -1,4 +1,4 @@
-function MenuToHide() {
+export default function Menu() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -15,10 +15,9 @@ function MenuToHide() {
         stroke="currentColor"
       >
         <line x1="2" y1="16" x2="30" y2="16" stroke="currentColor"></line>
-        <line x1="2" y1="7" x2="30" y2="7"></line> <line x1="2" y1="25" x2="16" y2="25"></line>
+        <line x1="2" y1="7" x2="30" y2="7"></line>
+        <line x1="2" y1="25" x2="16" y2="25"></line>
       </g>
     </svg>
   );
 }
-
-export default MenuToHide;

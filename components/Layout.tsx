@@ -1,6 +1,5 @@
 import React from 'react';
 import DrawerMenu from '@components/DrawerMenu';
-import MenuIcon from '../public/icons/menu.svg';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import Sun from '@components/icons/Sun';
@@ -29,17 +28,18 @@ export default function Layout({ children, title }: TLayout) {
               <Menu />
             </div>
             <Link href="/">
-              <Image
-                src="/ts-logo.svg"
-                alt="ts"
-                width={40}
-                height={40}
-                className="cursor-pointer"
-              />
+              <div>
+                <Image
+                  src="/ts-logo.svg"
+                  alt="ts"
+                  width={40}
+                  height={40}
+                  className="cursor-pointer"
+                />
+              </div>
             </Link>
             <p className="ml-2 font-medium text-xs self-end">{title}</p>
           </div>
-
           <div
             className="cursor-pointer"
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
