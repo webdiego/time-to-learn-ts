@@ -29,6 +29,7 @@ export default function DrawerMenu({ isOpen, toggleDrawer, theme }: TDrawer) {
         <Button route="/basics/07-enums" title="06-Enums" />
         <p>Advance</p>
         <Button route="/advance/01-generics" title="01-Generics" />
+        <Button route="/advance/02-utility-types" title="02-Utility Types" />
       </div>
     </Drawer>
   );
