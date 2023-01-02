@@ -23,7 +23,7 @@ export default function Basic() {
     <Layout title="Functions">
       <div className="mt-10">
         <Title text="Basic function" />
-        <p>
+        <p className="mt-4">
           We define the types inside a function, without say what should return, in this case is
           inferring a type of number by default
         </p>

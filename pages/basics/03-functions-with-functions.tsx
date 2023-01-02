@@ -1,31 +1,13 @@
 import Layout from '@components/Layout';
 import Code from '@components/Code';
 import Title from '@components/Title';
-function printText(text: number, callback: () => void): void {
-  console.log(text);
-  callback();
-}
-type TCallbackFunction = (el: number) => number;
-
-function arrayMutate(numbers: number[], callback: TCallbackFunction): number[] {
-  return numbers.map(callback);
-}
-const product: TCallbackFunction = (number) => number * 2;
-
-arrayMutate([1, 2, 3], (el) => el * 2);
-
-function addNumber(number: number): (val: number) => number {
-  return (val: number) => val + number;
-}
-const addFive = addNumber(5);
-console.log(addFive(10));
 
 export default function FunctionsWithFunctions() {
   return (
     <Layout title="Functions with functions">
       <div className="mt-10">
         <Title text="Callbacks" />
-        <p>
+        <p className="mt-4">
           We define the types inside a function, without say what should return, in this case is
           inferring a type of number by default
         </p>
